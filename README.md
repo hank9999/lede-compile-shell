@@ -3,7 +3,7 @@ Lean's OpenWrt Compile Shell
 Ubuntu Only  
 
 
-**You can fork or cloen this repository and Config your own config**  
+**You can fork or clone this repository and Config your own config**  
 default config: default_x86_64 without pptp l2tp adblock but with qos frp ipv6  
 other default_x86_64 config no change  
 enjoy it
