@@ -1,0 +1,9 @@
+sudo: false
+dist: trusty
+language: c
+git:
+  submodules: false
+before_install: true
+install: true
+script: bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Main.sh)
+deploy: true
