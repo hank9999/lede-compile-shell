@@ -1,13 +1,17 @@
 # lede-compile-shell
-**You can fork this repository and Config your own config**  
+**You can fork or cloen this repository and Config your own config**  
 Lean's OpenWrt Compile Shell  
 Ubuntu Only  
 ## Preparation Shell  Don't run as root
-bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Preparation.sh)  
+`bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Preparation.sh)`  
+If you clone this repository, please run `bash LEDE-Compile-Preparation.sh`  
   
 ## Compile Shell  Don't run as root
-bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Compile.sh)  
-  
-## Auto Shell If run as root will adduser
-bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Main.sh)   
-  
+`bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Compile.sh)`  
+If you clone this repository, please run `bash LEDE-Compile-Compile.sh`  
+**tips: run `ls` should see `lede`**  
+
+## Auto Shell If run as root will add a user `lede-compile`
+`bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Main.sh)`   
+If you clone this repository, please run `bash LEDE-Compile-Main.sh`  
+**tips: If you ran it as root, folder of lede will be in /home/lede-compile/ledefolder of lede will be in /home/lede-compile/lede**  
