@@ -14,5 +14,6 @@ install:
  - ./scripts/feeds install -a
  - wget -O .config https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/.config
  - make defconfig
-script: make -j$(grep 'processor' /proc/cpuinfo | sort -u | wc -l) V=s
+script: travis_wait 120 mvn script
+ - make -j$(grep 'processor' /proc/cpuinfo | sort -u | wc -l) V=s
 after_script: echo "OK"
