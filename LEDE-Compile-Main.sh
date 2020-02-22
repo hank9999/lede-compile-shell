@@ -18,7 +18,7 @@ sudo apt -y install build-essential asciidoc binutils bzip2 gawk gettext git lib
 echo "-----------------------"
 echo "1.3. Clone Source code"
 echo "-----------------------"
-git clone https://github.com/coolsnowwolf/lede
+git clone --depth=1 https://github.com/coolsnowwolf/lede
 cd lede
 echo "cd into lede"
 echo "-----------------------"
