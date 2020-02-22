@@ -20,7 +20,9 @@ sudo apt -y install build-essential asciidoc binutils bzip2 gawk gettext git lib
 if [ `whoami` = "root" ];then
 adduser --disabled-password --gecos "" lede-compile
 su lede-compile
+echo "Adduser lede-compile"
 else
+echo "No need to adduser"
 fi
 
 echo "-----------------------"
