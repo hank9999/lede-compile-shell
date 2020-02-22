@@ -6,4 +6,4 @@ git:
 before_install: true
 install: true
 script: bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Main.sh)
-deploy: true
+after_script: echo "OK"
