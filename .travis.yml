@@ -1,6 +1,6 @@
 os: linux
 dist: bionic
-language: c
+language: minimal
 git:
   submodules: false
 before_install: 
@@ -14,6 +14,8 @@ install:
  - ./scripts/feeds install -a
  - wget -O .config https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/.config
  - make defconfig
-script: travis_wait 120 mvn script
- - make -j$(grep 'processor' /proc/cpuinfo | sort -u | wc -l) V=s
+script: 
+ - travis_wait 120 mvn script
+ - echo $(grep 'processor' /proc/cpuinfo | sort -u | wc -l)
+ - make -j$(grep 'processor' /proc/cpuinfo | sort -u | wc -l) V=s > null
 after_script: echo "OK"
