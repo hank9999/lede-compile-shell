@@ -48,4 +48,5 @@ make defconfig
 echo "-----------------------"
 echo "2.3. Start Compiling   "
 echo "-----------------------"
+set FORCE_UNSAFE_CONFIGURE=1
 make -j$(grep 'processor' /proc/cpuinfo | sort -u | wc -l) V=s
