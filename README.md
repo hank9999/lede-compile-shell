@@ -8,6 +8,7 @@ default config: default_x86_64 without pptp l2tp adblock but with qos frp ipv6
 other default_x86_64 config no change  
 enjoy it
 
+**Recommended Ubuntu 16/17/18/19**  
 
 ## Preparation Shell  Don't run as root
 `bash <(curl https://raw.githubusercontent.com/hank9999/lede-compile-shell/master/LEDE-Compile-Preparation.sh)`  
