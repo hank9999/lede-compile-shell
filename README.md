@@ -4,7 +4,7 @@ Ubuntu Only
 
 
 **You can fork or clone this repository and Config your own config**  
-default config: default_x86_64 without pptp l2tp adblock but with qos frp ipv6  
+default config: default_x86_64 without pptp l2tp adbyby xlnetacc zerotier but with qos frp ipv6  
 other default_x86_64 config no change  
 enjoy it
 
